@@ -9,7 +9,7 @@ import SwiftUI
 struct AboutView: View {
     var body: some View {
         VStack {
-            Text("About Little Lemon")
+            Text("About Little Lemon.")
                 .font(.title)
                 .bold()
                 .foregroundColor(.green)
