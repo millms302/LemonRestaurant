@@ -97,14 +97,15 @@ struct MenuView: View {
         //list
         List{
             ForEach(displayMenu, id: \.name){ name, price in
-                HStack{
-                    Text(name)
-                        .font(.headline)
-                    Spacer()
-                    Text("$\(price,specifier:"%.2f")")
-                        .foregroundColor(.secondary)
-                }
-                .padding(.vertical,5)
+              //  HStack{
+              //      Text(name)
+              //          .font(.headline)
+              //      Spacer()
+              //      Text("$\(price,specifier:"%.2f")")
+              //          .foregroundColor(.secondary)
+              //  }
+              //  .padding(.vertical,5)
+                MenuItemRowView(name:name,price:price)
             }
         }
         

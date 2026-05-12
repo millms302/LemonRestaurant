@@ -23,7 +23,10 @@ struct DessertView: View {
         List{
             ForEach(dessertMenu.sorted { $0.value < $1.value },
                     id:\.key){ name, price in
-                    Text("\(name) - \(price)")
+                    
+                    MenuCardView(name:name,price:price)
+                    .listRowInsets(EdgeInsets()) // Removes the default padding.
+                    .listRowBackground(Color.clear) // Transparent Background.
             }
         }
     }

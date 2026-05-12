@@ -99,3 +99,19 @@ func calculateTotal(price: Double, quantity: Int) -> Double{
 
 let total = calculateTotal(price: 9.99, quantity: 3)
 print(total)
+
+
+// 102 Session #3
+
+let menu = [
+    "Pizza": 9.99,
+    "Soup": 4.50,
+    "Steak": 14.99
+]
+for (nameP,priceP) in menu {
+    printMenuItem(name:nameP,price:priceP)
+}
+
+func printMenuItem(name:String,price:Double){
+    print("\(name): $\(price)")
+}
