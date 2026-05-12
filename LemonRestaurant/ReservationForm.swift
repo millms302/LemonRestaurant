@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ReservationForm: View {
     // constants
-    let restaurantName = "Little Lemon"
+    let restaurantName = "Hardcore Coffee"
     let maxGuests = 10
     // variables
     // State vars: if this value change, updates the UI
@@ -42,7 +42,7 @@ struct ReservationForm: View {
             Section{
                 HStack{
                     Image(systemName:"fork.knife")
-                        .foregroundColor(.green)
+                        .foregroundColor(.red)
                         .font(.title)
                     
                     VStack(alignment: .leading){
@@ -94,8 +94,7 @@ struct ReservationForm: View {
                         Text("Kids Menu Available")
                             .font(.footnote)
                     }
-            }
-            // actions
+            }            // actions
             Section(header:Text("Actions")){
                 Button("Preview reservation info"){
                     previewText =

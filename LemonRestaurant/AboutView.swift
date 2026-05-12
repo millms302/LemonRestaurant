@@ -9,12 +9,12 @@ import SwiftUI
 struct AboutView: View {
     var body: some View {
         VStack {
-            Text("About Little Lemon.")
+            Text("About Hardcore Coffee.")
                 .font(.title)
                 .bold()
                 .foregroundColor(.green)
             
-            Text("Lorem ipsum dolor sit amet consectetur adipiscing elit, potenti consequat aliquam pharetra a egestas vitae, tellus bibendum auctor ornare conubia leo.")
+            Text("We have coffee and snacks for the punks and rockers that live by Hardcore rock. Beware: Mosh pits in the cafe are encourged.")
             
             HStack {
                 Image(systemName: "fork.knife")

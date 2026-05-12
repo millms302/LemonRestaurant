@@ -81,4 +81,21 @@ print(words)
  print(welcomeStudent(name:Mike))
  */
 
+// Code for MDI 102 Session #2
 
+func greet2(person: String, formally:Bool=false)->String{
+    if formally {
+        return "Greetings, " + person
+    } else {
+        return "Hi, " + person
+    }
+}
+print(greet2(person:"Someone",formally:true))
+print(greet2(person:"Someone"))
+
+func calculateTotal(price: Double, quantity: Int) -> Double{
+    return price * Double(quantity)
+}
+
+let total = calculateTotal(price: 9.99, quantity: 3)
+print(total)
